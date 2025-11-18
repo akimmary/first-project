@@ -12,66 +12,67 @@
     --color-bg: #F8FAFC;
     --color-white: #FFFFFF;
 
-    --font-heading: 'Poppins', sans-serif;
+    --font-heaing: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
 body {
-    font-family: var(--font-body);
-    color: var(--color-secondary);
-    line-height: 1.6;
-    background-color: #F8FAFC;
+  font-family: 'Inter', sans-serif;
+  color: #1E293B;
+  line-height: 1.6;
+  background-color: #F8FAFC;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: sticky;
-    height: 70px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  height: 70px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background-color: white;
 }
 
 .header__logo {
-    color:#6366F1;
-    font-size: 24px;
-    font-weight: bold;
+  color:#6366F1;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 
 .header__links-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
+  display: flex;
+  gap: 32px;
+  list-style: none;
 }
 
 .menu__link {
-    text-decoration: none;
-    color: #1E293B;
+  text-decoration: none;
+  color: #1E293B;
 }
 
 
 .menu__link:hover{
-    color: #6366F1;
+  color: #6366F1;
 }
 
-.header__btn {
-    padding: 12px 24px;
-    background-color: #6366F1;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+.header__button {
+  padding: 12px 24px;
+  background-color: #6366F1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.header__btn:hover {
-    background-color: var(--color-accent);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+.header__button:hover {
+  background-color: #F59E0B;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 /* Hero Section */
@@ -93,7 +94,7 @@ body {
 .hero__title {
   font-size: 48px;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: #1E293B;
   margin-bottom: 20px;
   line-height: 1.2;
 }
@@ -108,7 +109,7 @@ body {
 }
 
 .hero__button {
-  background-color: var(--color-primary);
+  background-color: #6366F1;
   color: white;
   padding: 16px 40px;
   font-size: 18px;
@@ -144,8 +145,8 @@ body {
 .hero__stats-number {
   font-size: 36px;
   font-weight: 700;
-  color: var(--color-primary);
-  font-family: var(--font-heading);
+  color: #6366F1;
+  font-family:'Poppins', sans-serif;
   line-height: 1;
 }
 
@@ -158,29 +159,73 @@ body {
   font-weight: 500;
 }
 
-/* Адаптив */
-@media (max-width: 768px) {
-  .hero__title {
-    font-size: 32px;
-  }
-
-  .hero__subtitle {
-    font-size: 16px;
-  }
-
-  .hero__stats {
-    gap: 40px;
-  }
-
-  .hero__stats-number {
-    font-size: 28px;
-  }
+.container__features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .hero__stats {
-    flex-direction: column;
-    gap: 24px;
-    margin-top: 40px;
-  }
+.features__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+.features__cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  min-height: auto;
+}
+
+.features__cart-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid #F1F5F9;
+  transition: all 0.3s ease;
+}
+
+.features__cart-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.features__cart-item-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  background-color: #EEF2FF;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: 24px;
+}
+
+.features__cart-item-image {
+  height: 56px;
+  width: 56px;
+
+}
+
+.features__cart-item-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1E293B;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+}
+
+.features__cart-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748B;
+  line-height: 1.5;
 }
