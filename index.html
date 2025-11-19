@@ -1,120 +1,226 @@
 <!DOCTYPE html>
-<html land="ru">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=enge" />
-  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-  <title>CodeWave Academy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css"/>
-</head>
-<body>
-  <header class="header">
-    <div class="header__logo">CodeWave</div>
-    <nav class="header__menu">
-      <ul class="header__links-list">
-        <li class="header__links-list-item"><a class="menu__link" href="#about">Курсы</a></li>
-        <li class="header__links-list-item"><a class="menu__link" href="#courses">Преподаватели</a></li>
-        <li class="header__links-list-item"><a class="menu__link" href="#contact">О нас</a></li>
-      </ul>
-    </nav>
-    <button class="header__button" href="#courses">Начать обучение</button>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero__container">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWave Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">CodeWave</div>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item">
+            <a class="header__menu-link" href="#">Курсы</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__menu-link" href="#">Преподаватели</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__menu-link" href="#">О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button">Начать обучение</button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
           <h1 class="hero__title">Освой веб-разработку с нуля за 6 месяцев</h1>
-          <p class="hero__subtitle">Практические курсы по HTML, CSS, JavaScript и React от ведущих разработчиков.
-            Реальные проекты в портфолио, поддержка менторов и гарантия трудоустройства</p>
-          <button class="hero__button" href="#courses">Выбрать курс</button>
+          <p class="hero__subtitle">
+            Практические курсы по HTML, CSS, JavaScript и React от ведущих
+            разработчиков. Реальные проекты в портфолио, поддержка менторов и
+            гарантия трудоустройства
+          </p>
+          <button class="hero__button">Выбрать курс</button>
           <ul class="hero__stats">
             <li class="hero__stats-item">
-              <span class="hero__stats-number">>12 000+</span>
-              <span  class="hero__stats-label">студентов</span>
+              <span class="hero__stats-number">12 000+</span>
+              <span class="hero__stats-label">студентов</span>
             </li>
             <li class="hero__stats-item">
               <span class="hero__stats-number">50+</span>
-              <span  class="hero__stats-label">курсов</span>
+              <span class="hero__stats-label">курсов</span>
             </li>
             <li class="hero__stats-item">
               <span class="hero__stats-number">95%</span>
-              <span  class="hero__stats-label">довольных выпускников</span>
+              <span class="hero__stats-label">довольных выпускников</span>
             </li>
           </ul>
-      </div>
-    </section>
-    <section class="features" id="features">
-      <div class="container__features">
-        <h2 class="features__title">Почему выбирают CodeWave Academy</h2>
-        <div class="features__cart">
-          <div class="features__cart-item">
-            <div class="features__cart-item-image-wrapper">
-              <img class="features__cart-item-image" src="./images/icon01-target.svg" alt="мишень">
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container">
+          <h2 class="features__title">Почему выбирают CodeWave Academy</h2>
+          <div class="features__card">
+            <div class="features__card-item">
+              <div class="features__icon-wrapper">
+                <img
+                  class="features__card-item-image"
+                  src="./images/icon01-target.svg"
+                  alt="мишень"
+                />
+              </div>
+              <h3 class="features__card-item-subtitle">Практический подход</h3>
+              <p class="features__card-item-text">
+                Каждый урок включает реальные задания. Вы создадите 15+ проектов
+                для портфолио, от простых landing pages до полноценных
+                веб-приложений.
+              </p>
             </div>
-            <h3 class="features__cart-item-subtitle">Практический подход</h3>
-            <p class="features__cart-item-text">Каждый урок включает реальные задания. Вы создадите 15+ проектов для портфолио, от простых landing pages до полноценных веб-приложений.</p>
-          </div>
-          <div class="features__cart-item">
-            <div class="features__cart-item-image-wrapper">
-              <img class="features__cart-item-image" src="./images/icon02-dev.svg" alt="разработчик">
+            <div class="features__card-item">
+              <div class="features__icon-wrapper">
+                <img
+                  class="features__card-item-image"
+                  src="./images/icon02-dev.svg"
+                  alt="разработчик"
+                />
+              </div>
+              <h3 class="features__card-item-subtitle">Менторская поддержка</h3>
+              <p class="features__card-item-text">
+                Персональный наставник поможет с каждым заданием, проведет
+                код-ревью и подготовит к собеседованиям. Ответы на вопросы в
+                течение 2 часов.
+              </p>
             </div>
-            <h3 class="features__cart-item-subtitle">Менторская поддержка</h3>
-            <p class="features__cart-item-text">Персональный наставник поможет с каждым заданием, проведет код-ревью и подготовит к собеседованиям. Ответы на вопросы в течение 2 часов.</p>
-          </div>
-          <div class="features__cart-item">
-            <div class="features__cart-item-image-wrapper">
-              <img class="features__cart-item-image" src="./images/icons03-rocket.svg" alt="ракета">
+            <div class="features__card-item">
+              <div class="features__icon-wrapper">
+                <img
+                  class="features__card-item-image"
+                  src="./images/icon03-rocket.svg"
+                  alt="ракета"
+                />
+              </div>
+              <h3 class="features__card-item-subtitle">Актуальная программа</h3>
+              <p class="features__card-item-text">
+                Обучение на современном стеке технологий: HTML5, CSS3,
+                JavaScript ES6+, React, Git. Программа обновляется каждый
+                квартал.
+              </p>
             </div>
-            <h3 class="features__cart-item-subtitle">Актуальная программа</h3>
-            <p class="features__cart-item-text">Обучение на современном стеке технологий: HTML5, CSS3, JavaScript ES6+, React, Git. Программа обновляется каждый квартал.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <h2 class="contact__title" id="contact">Готовы начать обучение?</h2>
-        <p class="contact__text">Оставьте заявку, и наш менеджер свяжется с вами в течение 30 минут, чтобы подобрать оптимальную программу и ответить на все вопросы.</p>
-        <form class="contact__form" action="" method="post">
-          <input class="contact__input" type="text" placeholder="Ваше имя" required>
-          <input class="contact__input" type="email" placeholder="email@example.com" required>
-          <input class="contact__input" type="tel" placeholder="+7 (___) ___-__-__" Optional>
-          <input class="contact__input" type="text" rows="4" placeholder="Какой курс вас интересует?">
-          <input type="checkbox" id="checkbox1"required>
-          <label for="checkbox1">Согласен на обработку персональных данных</label>
-          <button class="contact__btn" type="submit">Отправить заявку</button>
-          <p>Мы не передаём данные третьим лицам</p>
-        </form>
-      </div>
-    </section>
+      </section>
+      <section class="contact">
+        <div class="contact__container">
+          <form class="contact__form" action="" method="post">
+            <h2 class="contact__form-title">Готовы начать обучение?</h2>
+            <p class="contact__form-text">
+              Оставьте заявку, и наш менеджер свяжется с вами в течение 30
+              минут, чтобы подобрать оптимальную программу и ответить на все
+              вопросы.
+            </p>
+            <input
+              class="contact__form-input"
+              type="text"
+              name="username"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              class="contact__form-input"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+            <input
+              class="contact__form-input"
+              type="tel"
+              name="phone"
+              placeholder="+7 (___) ___-__-__"
+            />
+            <textarea
+              class="contact__form-textarea"
+              rows="4"
+              name="message"
+              placeholder="Какой курс вас интересует?"
+            ></textarea>
+            <div class="contact__form-label-group">
+              <input
+                class="contact__form-input"
+                type="checkbox"
+                name="agreement"
+                id="checkbox1"
+                required
+              />
+              <label class="contact__form-label" for="checkbox1"
+                >Согласен на обработку персональных данных</label>
+            </div>
+            <button class="contact__form-button" type="submit">
+              Отправить заявку
+            </button>
+            <p class="contact__form-note">
+              Мы не передаём данные третьим лицам
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__logo">CodeWave</div>
-        <div class="footer__inner">
-          <nav class="footer__nav">
-            <ul class="footer__nav-list">
-              <li> <a class="footer__link" href="#courses">Курсы</a></li>
-              <li><a class="footer__link" href="#">Преподаватели</a></li>
-              <li><a class="footer__link" href="#">Отзывы</a></li>
-              <li><a class="footer__link" href="#">Блог</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li>
+              <a class="footer__link" href="#courses">Курсы</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Преподаватели</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
         <div class="footer__socials">
-            <address class="footer__address">
-              <a class="footer__link" href="mailto:hello@codewave.com">hello@codewave.com</a>
-              <a class="footer__link" href="tel:+74951234567">+7 (495) 123-45-67</a>
-              Адрес: Москва, ул. Пушкина, д. 10
-            </address>
-            <a class="footer__social-link" href="#"><img src="./images/facebook-icon.svg" alt="Facebook"></a>
-            <a class="footer__social-link" href="#"><img src="./images/twitter-icon.svg" alt="Twitter"></a>
-            <a class="footer__social-link" href="#"><img src="./images/instagram-icon.svg" alt="Instagram"></a>
+          <address class="footer__socials-address">
+            <a class="footer__link" href="mailto:hello@codewave.com"
+              >hello@codewave.com</a
+            >
+            <a class="footer__link" href="tel:+74951234567"
+              >+7 (495) 123-45-67</a
+            >
+            Адрес: Москва, ул. Пушкина, д. 10
+          </address>
+          <div class="footer__social-group">
+            <a class="footer__social-link" href="#"
+              ><img
+                class="footer__social-link-image"
+                src="./images/icon04-facebook.svg"
+                alt="Facebook"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img
+                class="footer__social-link-image"
+                src="./images/icon05-telegram.svg"
+                alt="Telegram"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img
+                class="footer__social-link-image"
+                src="./images/icon06-instagram.svg"
+                alt="Instagram"
+            /></a>
+          </div>
         </div>
       </div>
-      <p class="footer__text">© 2024 CodeWave Academy. Все права защищены.</p>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          © 2025 CodeWave Academy. Все права защищены.
+        </p>
+      </div>
     </footer>
-  </main>
-</body>
+  </body>
 </html>
 
